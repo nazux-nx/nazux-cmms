@@ -36,7 +36,7 @@ const NavBar = () => {
             <Link href="/api/auth/signout" className="mr-15">
               Logout
             </Link>
-            <UserAvatar />
+            {/* <UserAvatar /> */}
           </>
         )}
       </div>

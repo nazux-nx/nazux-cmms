@@ -1,3 +1,5 @@
+import "@radix-ui/themes/styles.css";
+import { Theme } from "@radix-ui/themes";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -20,8 +22,10 @@ export default function RootLayout({
     <html lang="en" data-theme="winter">
       <body className={inter.className}>
         <AuthProvider>
-          <NavBar />
-          <main>{children}</main>
+          <Theme>
+            <NavBar />
+            <main>{children}</main>
+          </Theme>
         </AuthProvider>
       </body>
     </html>
